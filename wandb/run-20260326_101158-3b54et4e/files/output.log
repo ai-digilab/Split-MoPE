@@ -1,0 +1,73 @@
+cuda:0
+15 mean texture
+16 mean smoothness
+17 mean concavity
+18 mean symmetry
+19 radius error
+20 texture error
+21 compactness error
+22 concavity error
+23 concave points error
+24 symmetry error
+25 worst texture
+26 worst compactness
+27 worst concavity
+28 worst concave points
+29 worst fractal dimension
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.01it/s]
+
+
+Alignments per expert:[(2,), (0, 2), (1, 2), (0, 1, 2)]
+
+
+{0: 2560, 1: 2560, 2: 2560}
+7680
+Expert input dims: [2560, 5120, 5120, 7680]
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 326, in train_moe_tabular
+    preds, probs = router_and_moe(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/split_mope_github/models/moe.py", line 115, in forward
+    router_gates = self.router(x, add_noise=training)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/split_mope_github/models/moe.py", line 33, in forward
+    x = self.relu(self.fc_1(x))
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (25x3584 and 7680x15360)
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 326, in train_moe_tabular
+    preds, probs = router_and_moe(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/split_mope_github/models/moe.py", line 115, in forward
+    router_gates = self.router(x, add_noise=training)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/split_mope_github/models/moe.py", line 33, in forward
+    x = self.relu(self.fc_1(x))
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (25x3584 and 7680x15360)

@@ -1,0 +1,13 @@
+{"time":"2026-03-31T21:24:39.115212318Z","level":"INFO","msg":"stream: starting","core version":"0.24.0"}
+{"time":"2026-03-31T21:24:39.404315182Z","level":"INFO","msg":"stream: created new stream","id":"hqn8oynt"}
+{"time":"2026-03-31T21:24:39.40442045Z","level":"INFO","msg":"handler: started","stream_id":"hqn8oynt"}
+{"time":"2026-03-31T21:24:39.404596064Z","level":"INFO","msg":"stream: started","id":"hqn8oynt"}
+{"time":"2026-03-31T21:24:39.40461956Z","level":"INFO","msg":"writer: started","stream_id":"hqn8oynt"}
+{"time":"2026-03-31T21:24:39.404649555Z","level":"INFO","msg":"sender: started","stream_id":"hqn8oynt"}
+{"time":"2026-03-31T21:38:55.141554684Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/jirureta-ikerlan/MoPE_run_tabular/hqn8oynt/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-04-01T00:58:34.269840284Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-04-01T00:58:34.539655706Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-04-01T00:58:34.542342213Z","level":"INFO","msg":"stream: closing","id":"hqn8oynt"}
+{"time":"2026-04-01T00:58:34.542362594Z","level":"INFO","msg":"handler: closed","stream_id":"hqn8oynt"}
+{"time":"2026-04-01T00:58:34.542471448Z","level":"INFO","msg":"sender: closed","stream_id":"hqn8oynt"}
+{"time":"2026-04-01T00:58:34.542483536Z","level":"INFO","msg":"stream: closed","id":"hqn8oynt"}

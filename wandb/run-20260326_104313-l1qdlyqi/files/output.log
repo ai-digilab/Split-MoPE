@@ -1,0 +1,52 @@
+cuda:0
+15 mean texture
+16 mean smoothness
+17 mean concavity
+18 mean symmetry
+19 radius error
+20 texture error
+21 compactness error
+22 concavity error
+23 concave points error
+24 symmetry error
+25 worst texture
+26 worst compactness
+27 worst concavity
+28 worst concave points
+29 worst fractal dimension
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:02<00:00,  1.03s/it]
+
+
+Alignments per expert:[(1,), (0, 1)]
+
+
+{0: 2560, 1: 2560}
+5120
+Expert input dims: [2560, 5120]
+
+FINAL EXPERT ROUTING SUM: tensor([328.1430, 230.0644])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([332.6316, 227.5000])
+NUM SAMPLES: 455
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 332, in train_moe_tabular
+    all_predictions.extend(batch_preds.cpu().numpy())
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 332, in train_moe_tabular
+    all_predictions.extend(batch_preds.cpu().numpy())
+KeyboardInterrupt

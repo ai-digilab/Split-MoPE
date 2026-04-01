@@ -1,0 +1,140 @@
+cuda:0
+15 mean texture
+16 mean smoothness
+17 mean concavity
+18 mean symmetry
+19 radius error
+20 texture error
+21 compactness error
+22 concavity error
+23 concave points error
+24 symmetry error
+25 worst texture
+26 worst compactness
+27 worst concavity
+28 worst concave points
+29 worst fractal dimension
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:02<00:00,  1.19s/it]
+
+
+Alignments per expert:[(1,), (0, 1)]
+
+
+{0: 2560, 1: 2560}
+5120
+Expert input dims: [2560, 5120]
+
+FINAL EXPERT ROUTING SUM: tensor([234.2903, 222.4410])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([229.4758, 229.5036])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([216.6274, 243.8535])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([218.8405, 245.3265])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([229.8768, 238.6266])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([242.0915, 228.6407])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([250.5836, 219.9029])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([255.6278, 214.8912])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([258.5743, 212.8059])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([259.6320, 213.2273])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([259.1316, 215.5123])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([257.5346, 218.8987])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([255.3002, 222.6892])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([252.8024, 226.2738])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([250.2834, 229.2331])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([247.8128, 231.4269])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([245.3272, 233.0653])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([242.6143, 234.5591])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([239.4294, 236.3135])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([235.6351, 238.5129])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([231.8312, 240.5977])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([229.4331, 242.1519])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([228.4456, 243.8737])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([227.7034, 246.4447])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([226.4520, 250.0120])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([224.6871, 254.4618])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([222.6366, 259.7195])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([220.1745, 265.9298])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([217.2795, 273.0187])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([214.0796, 280.9063])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([210.4245, 289.6499])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([205.9991, 299.2296])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([200.7228, 309.5199])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([194.6460, 320.3372])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([187.7563, 331.5562])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([179.9966, 342.9913])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([171.4247, 354.4030])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([162.1736, 365.5384])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([152.3742, 376.1355])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([142.0064, 386.0812])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([131.1581, 395.2900])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([119.9749, 403.6800])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([108.6295, 411.2124])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([ 97.3124, 417.8901])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([ 86.2202, 423.7388])
+NUM SAMPLES: 455
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 304, in train_moe_tabular
+    party_representation = participant_encoders[party].encode(texts_party, convert_to_tensor=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1090, in encode
+    features = batch_to_device(features, device)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/util/tensor.py", line 184, in batch_to_device
+    batch[key] = batch[key].to(target_device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 304, in train_moe_tabular
+    party_representation = participant_encoders[party].encode(texts_party, convert_to_tensor=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1090, in encode
+    features = batch_to_device(features, device)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/util/tensor.py", line 184, in batch_to_device
+    batch[key] = batch[key].to(target_device)
+KeyboardInterrupt

@@ -1,0 +1,184 @@
+cuda:0
+15 mean texture
+16 mean smoothness
+17 mean concavity
+18 mean symmetry
+19 radius error
+20 texture error
+21 compactness error
+22 concavity error
+23 concave points error
+24 symmetry error
+25 worst texture
+26 worst compactness
+27 worst concavity
+28 worst concave points
+29 worst fractal dimension
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:02<00:00,  1.03s/it]
+
+
+Alignments per expert:[(1,), (0, 1)]
+
+
+{0: 2560, 1: 2560}
+5120
+Expert input dims: [2560, 5120]
+
+FINAL EXPERT ROUTING SUM: tensor([234.7388, 222.0043])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([232.3611, 227.2377])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([219.5611, 241.7146])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([221.4174, 243.3397])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([232.5097, 236.3436])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([244.9401, 225.7787])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([253.7202, 216.5558])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([259.3672, 210.9507])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([262.8523, 208.3383])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([264.2242, 208.5205])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([263.8378, 210.8600])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([262.2064, 214.4940])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([259.8379, 218.6340])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([257.1575, 222.6053])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([254.4499, 225.9379])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([251.8033, 228.4498])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([249.1305, 230.3075])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([246.2503, 231.9586])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([242.8871, 233.8299])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([238.8618, 236.1139])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([234.6933, 238.2757])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([232.0216, 239.6075])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([231.2167, 240.7000])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([231.1008, 242.4942])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([230.6467, 245.4154])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([229.7058, 249.2892])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([228.4647, 253.8198])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([226.9943, 259.1389])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([225.2874, 265.4167])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([223.3724, 272.4831])
+NUM SAMPLES: 455
+FINAL EXPERT ROUTING SUM: tensor([221.1283, 280.2290])
+NUM SAMPLES: 455
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 304, in train_moe_tabular
+    party_representation = participant_encoders[party].encode(texts_party, convert_to_tensor=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 200, in forward
+    query_states = self.q_norm(self.q_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/jupyter/workspace/split_mope_github/main_tabular.py", line 63, in <module>
+    ) = train_moe_tabular(
+  File "/home/jupyter/workspace/split_mope_github/models/moe_training_helpers.py", line 304, in train_moe_tabular
+    party_representation = participant_encoders[party].encode(texts_party, convert_to_tensor=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 200, in forward
+    query_states = self.q_norm(self.q_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jupyter/workspace/MoE_general/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+KeyboardInterrupt

@@ -1,0 +1,101 @@
+_wandb:
+    value:
+        cli_version: 0.24.0
+        e:
+            rgtvl8pp7nuqlxd7ydjgnayduvv7oruq:
+                codePath: main_tabular.py
+                codePathLocal: main_tabular.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "1885854916608"
+                        used: "595768606720"
+                email: jirureta@ikerlan.es
+                executable: /home/jupyter/workspace/MoE_general/venv/bin/python
+                git:
+                    remote: https://gitlab.ikerlan.es/Big-Data/students/2024_tesis_jon-irureta/vfl_images.git
+                gpu: NVIDIA L40S
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-9ea9461e-0b44-e282-631c-bb59e351af23
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-edb72158-3ae1-bafb-52cd-ddab9a6f15cc
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-b6eb1e6e-ee7e-f231-5cae-442f8b0476c1
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-e0534bb6-f0bd-1408-9985-6ca37359185b
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-cc0f8c7d-5fa7-56f2-01f3-9990744fade7
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-09722e69-cc15-7b6b-ca5d-35007f199728
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-767f635e-af4b-d881-1762-5baf886cf6e7
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-9f976a31-d9ec-7618-4853-c3c85f4b4199
+                host: 5c62e8afd6a6
+                memory:
+                    total: "540695658496"
+                os: Linux-6.8.0-106-generic-x86_64-with-glibc2.35
+                program: /home/jupyter/workspace/split_mope_github/main_tabular.py
+                python: CPython 3.10.12
+                root: /home/jupyter/workspace/split_mope_github
+                startedAt: "2026-03-26T23:52:39.322799Z"
+                writerId: rgtvl8pp7nuqlxd7ydjgnayduvv7oruq
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 75
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 75
+            "3":
+                - 2
+                - 13
+            "4": 3.10.12
+            "5": 0.24.0
+            "6": 4.57.3
+            "10":
+                - 20
+            "12": 0.24.0
+            "13": linux-x86_64
