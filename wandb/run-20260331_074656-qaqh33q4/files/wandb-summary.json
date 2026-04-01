@@ -1,1 +1,0 @@
-{"train/loss_total":0.6764529033711082,"_runtime":60,"epoch":0,"train/f1":0.38513513513513514,"_step":2,"train/acc":0.6263736263736264,"_timestamp":1.7749432741372914e+09,"_wandb":{"runtime":60},"routing_sigmoid_weights_train/expert_0":0.5163593292236328,"routing_sigmoid_weights_train/expert_1":0.5076537132263184}
