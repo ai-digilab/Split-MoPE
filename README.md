@@ -1,4 +1,4 @@
-# Split-MoPE: Mixture of Predefined Experts for Vertical Federated Learning
+# Mixture of Predefined Experts: Maximizing Data Usage on Vertical Federated Learning
  
 [![arXiv](https://img.shields.io/badge/arXiv-2602.12708-b31b1b.svg)](https://arxiv.org/abs/2602.12708)
  
